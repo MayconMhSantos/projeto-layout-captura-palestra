@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+.container{
+    max-width: 1000px;
+    max-height: none;
+    margin: auto;
+}
+
+.header {
+    background-color: rgb(216, 214, 214);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+
+section{
+    padding: 25px;
+    background-image: url("./public/img/bg-palestra.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form-container {
+    max-width: 280px;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 20px;
+    float: right;
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.623);
+}
+
+h2 {
+    font-size: 16px;
+}
+.mb {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: orangered;
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url("./public/img/arrow.jpg");
+    background-repeat: no-repeat;
+
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+
+}
+
+.footer {
+    background: black;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid orangered;
+}
+
+
+.elon {
+    width: 400px;
+}
+
+.description {
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.description h3, .description p {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 830px){
+
+    .container {
+        margin: auto;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    
+    
+    .elon {
+        width: 300px;
+    }
+    
+    .footer {
+        padding: 10px;
+    }
+
+    .form-container {
+        float: none;
+        margin: auto;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* .description {
+        display: inline-block;
+        color: white;
+        max-width: 100%;
+        text-align:center;
+        margin:auto;
+        padding: 10px;
+        margin-top: 20px;
+    } */
+
+}
+
+@media screen and (max-width: 605px){
+
+    .description {
+        display: inline-block;
+        color: white;
+        max-width: 100%;
+        text-align:center;
+        margin:auto;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+}
+@media screen and (max-width: 450px){
+
+    h1{
+        font-size: 1rem;
+    }
+
+    .elon {
+        width: 300px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .form-container {
+        float: none;
+        margin: auto;
+    }
+    
+    h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .description {
+        display: inline-block;
+        color: white;
+        max-width: 100%;
+        text-align:center;
+        margin:auto;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+}
